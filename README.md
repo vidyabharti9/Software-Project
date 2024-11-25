@@ -36,6 +36,5 @@
 
 1. Clone the repository:  
    ```bash
-   git clone (https://github.com/vidyabharti9/Software-Project.git)
+   git clone https://github.com/vidyabharti9/Software-Project.git
    ```  
-2. Follow the README file for further installation and setup instructions.  
