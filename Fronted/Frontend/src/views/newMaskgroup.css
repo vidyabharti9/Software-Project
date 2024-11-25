@@ -1,0 +1,193 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container-group {
+    width: 70% !important;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .maskgroup-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .maskgroup-card {
+    flex: 1 1 22%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-title {
+    flex: 1;
+  }
+  
+  .card-value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .maskgroup-lower-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .maskgroup-chart-container {
+    flex: 0 1 70%;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .maskgroup-one-liner {
+    flex: 0 1 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .maskgroup-reports {
+    margin-top: 20px;
+  }
+  
+  .report-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .report-title, .report-feature {
+    flex: 1;
+  }
+  
+  .report-url {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .report-date, .view-report-button {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .view-report-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .view-report-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .report-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .report-feature {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .report-subfeature {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .report-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .report-url {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* New CSS for DashboardCard text elements */
+  .maskgroup-text145 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .maskgroup-text147 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .maskgroup-text149 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+  }
+  
+  .maskgroup-badge-tag10 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid green;
+    margin-left: 5px;
+  }
+  
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid red;
+    margin-left: 5px;
+  }
+  

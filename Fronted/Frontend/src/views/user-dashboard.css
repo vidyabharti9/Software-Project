@@ -1,0 +1,242 @@
+/* General Container */
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.overview-title {
+  margin-bottom: 50px;
+}
+
+.overview-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.underline {
+  width: 40px;
+  height: 2px;
+  background-color: red;
+  margin-top: 5px;
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  align-items: stretch;
+}
+
+/* Left Section */
+.left-section {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 2;
+  height: auto;
+}
+
+.left-section h3 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  gap: 35px;
+  font-weight: bold;
+  color: #7a3aed;
+  margin-bottom: 20px;
+}
+
+.description p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stat-box {
+  text-align: center;
+  background-color: white; /* Set background to white */
+  color: black; /* Set text color to black */
+  padding: 20px;
+  border-radius: 20px; /* Rounded corners */
+  flex: 1 1 calc(33.33% - 20px); /* Adjust for three in a row */
+  min-width: 150px; /* Ensures the button doesn't shrink too much */
+  height: 150px; /* Fixed height for square shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Add transition for background and color */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items vertically */
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+  background-color: #7a3aed; /* Change background to purple on hover */
+  color: white; /* Change text color to white on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-box:hover h3,
+.stat-box:hover p {
+  color: white; /* Change text color to white on hover */
+}
+
+.stat-box h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.stat-box p {
+  font-size: 16px;
+  text-align: left;
+  color: #333; /* Darker color for the description text */
+}
+
+
+
+/* Right Section */
+.right-section {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Add these styles for the avatar image */
+.avatar {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area */
+  display: block; /* Makes the image block level */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Add styles for the avatar placeholder */
+.avatar-placeholder {
+  width: 100px; /* Match the width of the avatar */
+  height: 100px; /* Match the height of the avatar */
+  border-radius: 50%; /* Circular placeholder */
+  background-color: #ccc; /* Gray background for placeholder */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Centers the placeholder horizontally */
+  font-size: 24px; /* Adjust font size if you want to add text */
+
+  color: #fff; /* Text color for placeholder text */
+}
+
+.user-info h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 7px;
+}
+
+.user-info p {
+  font-size: 18px;
+  color: #666;
+  padding: 7px;
+}
+
+.activities {
+  text-align: center;
+  margin-top: auto;
+}
+
+.activities h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.activity-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Tablet and Mobile Devices */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .dashboard-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-section, .right-section {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .stat-box {
+    flex: 1 1 calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-section, .right-section {
+    padding: 15px;
+  }
+
+  .overview-title h2 {
+    font-size: 20px;
+  }
+
+  .stat-box h3 {
+    font-size: 20px;
+  }
+
+  .activity-box {
+    font-size: 12px;
+  }
+
+  .stat-box {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}

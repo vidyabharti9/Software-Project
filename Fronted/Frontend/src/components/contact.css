@@ -1,0 +1,142 @@
+/* General Layout */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-max-width {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contact-section-title {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-subheading {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center; /* Center boxes in the row */
+  padding: 50px 0;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.contact-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure icons and content are centered */
+.contact-contact-info1,
+.contact-contact-info2,
+.contact-contact-info3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-info-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.contact-info-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-box {
+  flex: 1;
+  max-width: 300px;
+  text-align: center; /* Center text and icons */
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.thq-icon-medium {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  fill: #09102ce1;
+  display: block; /* Ensure it's treated as a block */
+}
+
+.contact-content1,
+.contact-content2,
+.contact-content3,
+.contact-content4,
+.contact-content5,
+.contact-content6,
+.contact-content7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the icons and text */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .contact-row {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .contact-box {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-heading {
+    font-size: 1.8rem;
+  }
+
+  .contact-subheading {
+    font-size: 0.9rem;
+  }
+
+  .contact-info-title {
+    font-size: 1rem;
+  }
+}
+
+/* Buttons and Hover Effects */
+.contact-box:hover .contact-info-detail {
+  color: #333;
+}

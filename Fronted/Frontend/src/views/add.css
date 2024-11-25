@@ -1,0 +1,518 @@
+.maskgroup-container1 {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Container for hover details */
+  .hover-details {
+    position: absolute; /* Ensures it appears in a separate container */
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Centers the element */
+    background-color: white; /* Background color */
+    padding: 10px; /* Padding inside the box */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a lifted effect */
+    z-index: 1000; /* Ensures it appears above other elements */
+    display: none; /* Initially hidden */
+  }
+  
+  .info-icon:hover + .hover-details {
+    display: block; /* Shows the details when the info icon is hovered */
+  }
+  
+  
+  /* Existing CSS styles... */
+  
+  .report-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .report-details {
+    font-size: 14px;
+    line-height: 1.5; /* Added for better text spacing */
+    margin-bottom: 10px; /* Space between details and the button */
+  }
+  
+  .report-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .report-feature, .report-date {
+    color: #777;
+    margin-top: 5px; /* Space between title and other details */
+  }
+  
+  .view-report-button {
+    padding: 10px 16px;
+    border: none;
+    background-color: #7a3aed;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end; /* Align the button to the right */
+  }
+  
+  .view-report-button:hover {
+    background-color: #5a2cbf;
+  }
+  
+  .maskgroup-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .maskgroup-text244 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .report-item .report-title,
+  .report-item .report-feature,
+  .report-item .report-date {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ensures long text will be truncated */
+    max-width: 550px;
+  }
+  
+  
+  .maskgroup-maskgroup {
+    width: 1600px;
+    height: 1024px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-shrink: 1;
+    justify-content: center;
+  }
+  .maskgroup-dashbaord {
+    top: 0px;
+    left: 0px;
+    width: 1600px;
+    height: 1024px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .maskgroup-dashboardcard1 {
+    top: 155px;
+    left: 291px;
+    width: 210px;
+    height: 116.66666412353516px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-dashboardcard11 {
+    top: 155px;
+    left: 291px;
+    width: 210px;
+    height: 116.66666412353516px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-text145 {
+    top: 25px;
+    left: 25px;
+    color: var(--dl-color-black-100);
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 24px;
+  }
+  .maskgroup-text147 {
+    top: 54.166664123535156px;
+    left: 25px;
+    color: var(--dl-color-black-100);
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Semi Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 37.5px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .maskgroup-badge-tag10 {
+    gap: 4.166666507720947px;
+    top: 62.5px;
+    left: 120.91650390625px;
+    width: 74px;
+    height: 20.833332061767578px;
+    display: flex;
+    padding: 0 2.0833332538604736px 0 4.166666507720947px;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 4.166666507720947px;
+    justify-content: center;
+  }
+  .maskgroup-text149 {
+    color: var(--dl-color-black-100);
+    height: auto;
+    font-size: 12.5px;
+    font-style: Regular;
+    text-align: right;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 18.75px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .maskgroup-dashboardcard4 {
+    top: 301.66668701171875px;
+    left: 291px;
+    width: 210px;
+    height: 116.66666412353516px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-dashboardcard5 {
+    top: 155px;
+    left: 771.833251953125px;
+    width: 210px;
+    height: 116.66666412353516px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-dashboardcard6 {
+    top: 301.66668701171875px;
+    left: 771.833251953125px;
+    width: 210px;
+    height: 116.66666412353516px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-dashboardcard7 {
+    top: 155px;
+    left: 531.4166259765625px;
+    width: 210px;
+    height: 116.66666412353516px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-dashboardcard8 {
+    top: 301.66668701171875px;
+    left: 531.4166259765625px;
+    width: 210px;
+    height: 116.66666412353516px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-dashboardcard9 {
+    top: 155px;
+    left: 1012.25px;
+    width: 210px;
+    height: 116.66666412353516px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-dashboardcard10 {
+    top: 301.66668701171875px;
+    left: 1012.25px;
+    width: 210px;
+    height: 116.66666412353516px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-dashboardcard2 {
+    top: 448.3333740234375px;
+    left: 291px;
+    width: 690px;
+    height: 333.3333435058594px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    flex-grow: 1;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: rgba(244, 242, 255, 1);
+  }
+  .maskgroup-container2 {
+    gap: 29.16666603088379px;
+    top: 20.8333740234375px;
+    left: 16.66666603088379px;
+    width: 656px;
+    height: 33.33333206176758px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .maskgroup-text193 {
+    color: var(--dl-color-black-100);
+    height: auto;
+    font-size: 16.66666603088379px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 25px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .maskgroup-chart {
+    top: 62.50004196166992px;
+    left: 25px;
+    width: 640px;
+    height: 245.8333282470703px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .maskgroup-dashboardcard3 {
+    top: 448.3333740234375px;
+    left: 1010.583251953125px;
+    width: 210px;
+    height: 333.3333435058594px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 16.66666603088379px;
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-text228 {
+    top: 25.00004005432129px;
+    left: 25px;
+    color: var(--dl-color-black-100);
+    height: auto;
+    position: absolute;
+    font-size: 14.583333015441895px;
+    font-style: Semi Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 20.833332061767578px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .maskgroup-frame427318883 {
+    gap: 22px;
+    top: 62.500030517578125px;
+    left: 15px;
+    width: 83px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .maskgroup-text230 {
+    color: var(--dl-color-black-100);
+    height: auto;
+    text-align: left;
+    line-height: 16px;
+  }
+  .maskgroup-text232 {
+    color: var(--dl-color-black-100);
+    height: auto;
+    text-align: left;
+    line-height: 16px;
+  }
+  .maskgroup-text234 {
+    color: var(--dl-color-black-100);
+    height: auto;
+    text-align: left;
+    line-height: 16px;
+  }
+  .maskgroup-text236 {
+    color: var(--dl-color-black-100);
+    height: auto;
+    text-align: left;
+    line-height: 16px;
+  }
+  .maskgroup-text238 {
+    color: var(--dl-color-black-100);
+    height: auto;
+    text-align: left;
+    line-height: 16px;
+  }
+  .maskgroup-text240 {
+    color: var(--dl-color-black-100);
+    height: auto;
+    text-align: left;
+    line-height: 16px;
+  }
+  .maskgroup-text242 {
+    color: var(--dl-color-black-100);
+    height: auto;
+    text-align: left;
+    line-height: 16px;
+  }
+  .maskgroup-block {
+    top: 810px;
+    left: 293px;
+    width: 930px;
+    height: 214px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  
+    background-color: var(--dl-color-primary-second);
+  }
+  .maskgroup-text244 {
+    top: 24px;
+    left: 24px;
+    color: var(--dl-color-black-100);
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 20px;
+  }
+  .maskgroup-card1 {
+    top: 52px;
+    left: 24px;
+    width: 880px;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    box-sizing: content-box;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .maskgroup-text246 {
+    top: 14px;
+    left: 410px;
+    color: var(--dl-color-gray-800);
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 16px;
+  }
+  .maskgroup-text248 {
+    top: 11px;
+    left: 21.25537109375px;
+    color: rgba(13, 6, 45, 1);
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 24px;
+  }
+  .maskgroup-text260 {
+    top: 48px;
+    left: 21px;
+    color: rgba(120, 116, 134, 1);
+    width: 540px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 20px;
+  }
+  .maskgroup-card2 {
+    top: 146px;
+    left: 24px;
+    width: 880px;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  
+  @media (max-width: 1200px) {
+    .maskgroup-dashboardcard1,
+    .maskgroup-dashboardcard4,
+    .maskgroup-dashboardcard5,
+    .maskgroup-dashboardcard6,
+    .maskgroup-dashboardcard7,
+    .maskgroup-dashboardcard8,
+    .maskgroup-dashboardcard9,
+    .maskgroup-dashboardcard10 {
+      max-width: 100%; /* Allow full width on smaller screens */
+    }
+  
+    .maskgroup-chart,
+    .maskgroup-block,
+    .maskgroup-card1,
+    .maskgroup-card2 {
+      max-width: 100%; /* Allow full width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .maskgroup-maskgroup,
+    .maskgroup-dashbaord {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  }
+  

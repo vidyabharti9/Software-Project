@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0; /* Light grey background */
+  width: 100%; /* Full width */
+  max-width: 500px; /* Max width of container */
+  height: auto; /* Allow height to be dynamic */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Add padding around container */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+form {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Maximum width for the form */
+  margin: 20px 0; /* Margin above and below the form */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="email"], input[type="password"], input[type="url"], select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #060606;
+  color: white;
+}
+
+.head {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space between heading and form */
+}
+
+.url-heading {
+  margin-bottom: 10px; /* Space below the heading */
+  font-weight: bold; /* Make it bold */
+  font-size: 1rem; /* Font size adjustment */
+  color: #333; /* Text color */
+  text-align: center;
+}
